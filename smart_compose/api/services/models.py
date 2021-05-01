@@ -7,11 +7,11 @@ import numpy as np
 import tensorflow as tf
 from sklearn.preprocessing import MultiLabelBinarizer
 
-from api.models.payload import SentimentPayload, payload_to_list
-from api.models.prediction import SentimentPredictionResult
-from api.core.messages import NO_VALID_PAYLOAD, INVALID_TEXT_SIZE
+from smart_compose.api.models.payload import SentimentPayload, payload_to_list
+from smart_compose.api.models.prediction import SentimentPredictionResult
+from smart_compose.api.core.messages import NO_VALID_PAYLOAD, INVALID_TEXT_SIZE
 
-from smartcompose.config import MIN_LENGTH_TEXT, MAX_LENGTH_TEXT
+from smart_compose.config import MIN_LENGTH_TEXT, MAX_LENGTH_TEXT
 
 
 class SentimentModel(object):

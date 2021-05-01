@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from api.models.is_alive import IsAliveResult
+from smart_compose.api.models.is_alive import IsAliveResult
 
 router = APIRouter()
 

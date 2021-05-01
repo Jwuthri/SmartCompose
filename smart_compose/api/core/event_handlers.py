@@ -3,8 +3,8 @@ from typing import Callable
 from fastapi import FastAPI
 from loguru import logger
 
-from api.core.config import DEFAULT_MODEL_PATH
-from api.services.models import SentimentModel
+from smart_compose.api.core.config import DEFAULT_MODEL_PATH
+from smart_compose.api.services.models import SentimentModel
 
 
 def _startup_model(app: FastAPI) -> None:
